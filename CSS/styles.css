@@ -135,15 +135,18 @@ img {
 	color: #434455;
 }
 
-.dark {
-	background: #2e2f42;
-}
 .hero {
 	text-align: center;
-	background: #2e2f42;
-
-	padding-top: 188px;
-	padding-bottom: 188px;
+	max-width: 1440рх;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(46, 47, 66, 0.7);
+	background-image: url(../images/Dark-bg.png), url(../images/officepeople.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 188px 0;
 }
 
 .header-title {
@@ -180,8 +183,6 @@ img {
 	align-items: center;
 	flex-wrap: wrap;
 }
-.button-container {
-}
 
 .title-block {
 	line-height: 1.2;
@@ -212,12 +213,6 @@ img {
 
 .work-team {
 	background: #f4f4fd;
-}
-
-.list-img-team {
-}
-
-.img-team {
 }
 
 .workers-name {
@@ -251,12 +246,6 @@ img {
 
 .dark-back {
 	background: #2e2f42;
-}
-
-.list-btn {
-}
-
-.btn-item {
 }
 
 .buttons-nav {
@@ -321,12 +310,6 @@ img {
 	overflow: hidden;
 }
 
-.feature-list {
-	display: flex;
-}
-.feature-item:not(:nth-child(4n)) {
-	margin-right: 24px;
-}
 .feature-title {
 	font-weight: 500;
 	font-size: 20px;
@@ -367,19 +350,17 @@ img {
 	border-radius: 0px 0px 4px 4px;
 }
 
-.text-container {
-	padding-top: 32px;
-	padding-bottom: 32px;
-}
-
 .team-minititles {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
-	margin-bottom: 8px;
+	padding-top: 32px;
 	text-align: center;
 }
-
+.text-container {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
 .team-text {
 	text-align: center;
 
@@ -391,7 +372,7 @@ img {
 }
 
 .description-footer {
-	display: inline-block;
+	display: flex;
 
 	color: #e7e9fc;
 	width: 264px;
@@ -482,4 +463,159 @@ img {
 	border: 1px solid #e7e9fc;
 	border-top: 0;
 	padding: 32px 16px;
+}
+
+.list-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+.icon-item {
+	flex-basis: calc((100% - 72px) / 4);
+}
+.info-icon {
+}
+.block-icon {
+	display: flex;
+	width: 264px;
+	height: 112px;
+	background: #f4f4fd;
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.block-icon-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin-left: auto;
+	margin-right: auto;
+	width: 232px;
+	height: 40px;
+}
+
+.list-icon-link {
+	display: flex;
+}
+.list-item-link {
+	flex-basis: calc((100% - 72px) / 4);
+}
+.list-item-link:not(:last-child) {
+	margin-right: 24px;
+}
+
+.btn-social {
+	display: flex;
+	background-color: #4d5ae5;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+.btn-social:hover {
+	background: #404bbf;
+}
+.btn-social:focus {
+	background: #404bbf;
+}
+.info-icon-link {
+	fill: #fff;
+	width: 50%;
+	height: 50%;
+}
+.customers-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 40px;
+
+	text-align: center;
+
+	text-transform: capitalize;
+
+	color: #2e2f42;
+	margin-bottom: 72px;
+}
+
+.custom {
+	padding-top: 120px;
+}
+.list-logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	margin-bottom: 120px;
+}
+
+.list-logo-icon {
+	width: 168px;
+	height: 88px;
+	display: flex;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-info {
+	fill: #8e8f99;
+}
+
+.logo-info:hover,
+:focus {
+	fill: #404bbf;
+}
+.title-footer-link {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+
+	letter-spacing: 0.02em;
+
+	color: #ffffff;
+}
+
+.cellar-cont {
+	display: flex;
+}
+.title-footer-link {
+	margin-bottom: 16px;
+}
+.link-block {
+	margin-left: 120px;
+}
+.list-footer-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+
+	gap: 16px;
+}
+.item-footer-list:hover,
+:focus {
+	background-color: #31d0aa;
+}
+.item-footer-list {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+.social-link {
+	width: 50%;
+	height: 50%;
+	align-items: flex-start;
+
+	justify-content: center;
+}
+.info-footer-link {
+	fill: #f4f4fd;
 }
