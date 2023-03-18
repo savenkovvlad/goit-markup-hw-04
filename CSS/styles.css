@@ -138,7 +138,7 @@ img {
 
 .hero {
 	text-align: center;
-	max-width: 1440рх;
+	max-width: 1440px;
 	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
@@ -465,8 +465,13 @@ img {
 	border-top: 0;
 	padding: 32px 16px;
 }
-.item-product:hover,
-:focus {
+.link-product {
+	display: block;
+}
+.link-product:hover {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.link-product:focus {
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -524,7 +529,7 @@ img {
 	border-radius: 50%;
 }
 .btn-social:hover {
-	background: #404bbf;
+	background-color: #404bbf;
 }
 .btn-social:focus {
 	background: #404bbf;
@@ -548,19 +553,19 @@ img {
 }
 
 .custom {
+	padding-bottom: 120px;
 	padding-top: 120px;
 }
 .list-logo {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 	align-items: flex-start;
 	padding: 0px;
 	gap: 24px;
-	margin-bottom: 120px;
 }
 
-.list-logo-icon {
+.link-custom {
+	fill: #8e8f99;
 	width: 168px;
 	height: 88px;
 	display: flex;
@@ -570,14 +575,21 @@ img {
 	align-items: center;
 }
 
-.logo-info {
-	fill: #8e8f99;
+.list-logo-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.logo-info:hover,
-:focus {
+.link-custom:hover {
 	fill: #404bbf;
+	border-color: #404bbf;
 }
+.link-custom:focus {
+	fill: #404bbf;
+	border-color: #404bbf;
+}
+
 .title-footer-link {
 	font-weight: 500;
 	font-size: 16px;
@@ -605,17 +617,17 @@ img {
 
 	gap: 16px;
 }
-.item-footer-list:hover,
-.item-footer-list:focus {
+.social-link:hover,
+.social-link:focus {
 	background-color: #31d0aa;
 }
 .item-footer-list {
-	background: #8e8f99;
-	border-radius: 50%;
 	width: 40px;
 	height: 40px;
 }
 .social-link {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
 	display: flex;
 	width: 100%;
 	height: 100%;
